@@ -1,7 +1,8 @@
 # 🤖 NutriBot – Your AI-Powered Health & Nutrition Assistant
 
 NutriBot is an all-in-one AI-powered chatbot that helps users lead a healthier lifestyle through personalized nutrition guidance, fitness tracking, interactive features, and community support. Designed for accessibility and ease of use, NutriBot serves as your digital wellness coach — available 24/7.
-
+---
+[![image.png](https://i.postimg.cc/KvCKWmsW/image.png)](https://postimg.cc/w7cTyYz5)
 ---
 
 ## 🚀 Features
