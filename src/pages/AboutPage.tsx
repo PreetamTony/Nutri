@@ -180,7 +180,7 @@ const AboutPage: React.FC = () => {
                 <div className="bg-neutral-50 rounded-lg overflow-hidden border border-neutral-200">
                   <div className="h-48 bg-neutral-200">
                     <img
-                      src="https://i.postimg.cc/Pr43tvH9/tony.jpg"
+                      src="https://media.licdn.com/dms/image/v2/D5603AQGP29XF89-prQ/profile-displayphoto-shrink_200_200/B56ZYVHHrLHoAY-/0/1744110910963?e=2147483647&v=beta&t=JZIqEmLjEfS-MOD6WKJ_INvVHRnMH1u7tK27twDI4lk"
                       alt="Preetam Tony J."
                       className="w-full h-full object-cover"
                     />
