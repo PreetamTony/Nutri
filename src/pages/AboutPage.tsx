@@ -25,7 +25,7 @@ const AboutPage: React.FC = () => {
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
                 <div className="bg-white bg-opacity-10 p-4 rounded-lg">
-                  <p className="text-2xl font-bold text-white">10,000+</p>
+                  <p className="text-2xl font-bold text-white">10+</p>
                   <p className="text-primary-100 text-sm">Active Users</p>
                 </div>
                 <div className="bg-white bg-opacity-10 p-4 rounded-lg">
@@ -33,11 +33,11 @@ const AboutPage: React.FC = () => {
                   <p className="text-primary-100 text-sm">Nutrition Recommendations</p>
                 </div>
                 <div className="bg-white bg-opacity-10 p-4 rounded-lg">
-                  <p className="text-2xl font-bold text-white">50,000+</p>
+                  <p className="text-2xl font-bold text-white">50+</p>
                   <p className="text-primary-100 text-sm">Meal Plans Generated</p>
                 </div>
                 <div className="bg-white bg-opacity-10 p-4 rounded-lg">
-                  <p className="text-2xl font-bold text-white">95%</p>
+                  <p className="text-2xl font-bold text-white">100%</p>
                   <p className="text-primary-100 text-sm">User Satisfaction</p>
                 </div>
               </div>
@@ -57,12 +57,8 @@ const AboutPage: React.FC = () => {
                   people still struggle to make healthy eating choices that are personalized to their unique needs and preferences.
                 </p>
                 <p>
-                  Founded in 2023 by Preetam Tony J., a health-tech entrepreneur passionate about the intersection of nutrition science and artificial intelligence,
+                  Founded in 2025 by Preetam Tony J., a health-tech entrepreneur passionate about the intersection of nutrition science and artificial intelligence,
                   NutriBot aims to democratize access to personalized nutrition guidance.
-                </p>
-                <p>
-                  Our team consists of registered dietitians, software engineers, and AI specialists who work together to create
-                  a platform that delivers evidence-based nutrition recommendations tailored to each individual's health goals, dietary preferences, and lifestyle.
                 </p>
               </div>
             </div>
@@ -184,7 +180,7 @@ const AboutPage: React.FC = () => {
                 <div className="bg-neutral-50 rounded-lg overflow-hidden border border-neutral-200">
                   <div className="h-48 bg-neutral-200">
                     <img
-                      src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      src="https://ibb.co/YBqMCs78"
                       alt="Preetam Tony J."
                       className="w-full h-full object-cover"
                     />
@@ -198,39 +194,6 @@ const AboutPage: React.FC = () => {
                   </div>
                 </div>
                 
-                <div className="bg-neutral-50 rounded-lg overflow-hidden border border-neutral-200">
-                  <div className="h-48 bg-neutral-200">
-                    <img
-                      src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                      alt="Dr. Emily Chen"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="font-medium text-neutral-800">Dr. Emily Chen</h3>
-                    <p className="text-neutral-600 text-sm">Chief Nutrition Officer</p>
-                    <p className="text-neutral-600 text-sm mt-2">
-                      Registered dietitian with 15+ years of experience in personalized nutrition.
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="bg-neutral-50 rounded-lg overflow-hidden border border-neutral-200">
-                  <div className="h-48 bg-neutral-200">
-                    <img
-                      src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                      alt="Michael Rodriguez"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="font-medium text-neutral-800">Michael Rodriguez</h3>
-                    <p className="text-neutral-600 text-sm">Chief Technology Officer</p>
-                    <p className="text-neutral-600 text-sm mt-2">
-                      AI specialist with expertise in machine learning and natural language processing.
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
