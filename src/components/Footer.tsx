@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
               especially for students and working individuals.
             </p>
             <div className="flex space-x-4">
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-neutral-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/preetamtonyj/" target="_blank" rel="noreferrer" className="text-neutral-400 hover:text-white transition-colors">
                 <LinkedinIcon size={20} />
               </a>
               <a href="https://github.com" target="_blank" rel="noreferrer" className="text-neutral-400 hover:text-white transition-colors">
@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
             &copy; {new Date().getFullYear()} NutriBot. All rights reserved.
           </p>
           <p className="text-neutral-400 text-sm mt-2 md:mt-0">
-            Built by Preetam Tony J. with love for tech, health, and innovation ❤️
+            Built by Preetam Tony J ✨, with love for tech, health, and innovation ❤️
           </p>
         </div>
       </div>
