@@ -1,30 +1,30 @@
-import React from 'react';
-import { Map, Award, ShoppingCart, ChefHat, HelpCircle, Globe } from 'lucide-react';
-import GamesHeader from '@/components/GamesHeader';
 import GameCard from '@/components/GameCard';
+import GamesHeader from '@/components/GamesHeader';
+import { Award, ChefHat, Globe, HelpCircle, Map, ShoppingCart } from 'lucide-react';
+import React from 'react';
 
 const games = [
   {
     key: 'food-pairing',
     name: 'Food Pairing Challenge',
     icon: <Award className="h-8 w-8 text-primary-500" />,
-    description: `Pair Indian foods for better nutrient absorption! For example, pair palak (spinach) with amla (Indian gooseberry) or lemon to boost iron absorption. Powered by NutriBot's LLM, get instant feedback and learn the science behind traditional Indian food pairings.`,
+    description: `Pair Indian foods for better nutrient absorption! For example, pair palak (spinach) with amla (Indian gooseberry) or lemon to boost iron absorption. Powered by Eatelligence's LLM, get instant feedback and learn the science behind traditional Indian food pairings.`,
     path: '/games/food-pairing',
     llm: true,
   },
   {
     key: 'grocery-list',
-    name: `NutriBot's Grocery List Challenge`,
+    name: `Zestly's Grocery List Challenge`,
     icon: <ShoppingCart className="h-8 w-8 text-primary-500" />,
-    description: `Plan a healthy Indian grocery list within your budget! Choose from dal, vegetables, millets, and more. NutriBot guides you, explaining why certain items are better for your health and wallet. LLM-powered tips for Indian diets and regional preferences.`,
+    description: `Plan a healthy Indian grocery list within your budget! Choose from dal, vegetables, millets, and more. Eatelligence guides you, explaining why certain items are better for your health and wallet. LLM-powered tips for Indian diets and regional preferences.`,
     path: '/games/grocery-list',
     llm: true,
   },
   {
     key: 'cooking-show',
-    name: `NutriBot Cooking Show (Recipe Challenges)`,
+    name: `Zestly Cooking Show (Recipe Challenges)`,
     icon: <ChefHat className="h-8 w-8 text-primary-500" />,
-    description: `Take on recipe challenges like "Protein-packed Indian breakfast" (think moong dal chilla, paneer bhurji, etc). Select ingredients, get NutriBot's LLM-powered feedback, and see your recipe ranked for health and creativity. Compete on the leaderboard!`,
+    description: `Take on recipe challenges like "Protein-packed Indian breakfast" (think moong dal chilla, paneer bhurji, etc). Select ingredients, get Eatelligence's LLM-powered feedback, and see your recipe ranked for health and creativity. Compete on the leaderboard!`,
     path: '/games/cooking-show',
     llm: true,
   },
@@ -48,7 +48,7 @@ const games = [
     key: 'food-journey',
     name: 'Virtual Food Journey Around India & World',
     icon: <Globe className="h-8 w-8 text-primary-500" />,
-    description: `Travel with NutriBot to Indian regions (Punjab, Kerala, Bengal, etc.) and global cuisines. Learn about traditional diets, their health benefits, and try healthy versions of classic dishes. Interactive map and LLM explanations for each cuisine!`,
+    description: `Travel with Zestly to Indian regions (Punjab, Kerala, Bengal, etc.) and global cuisines. Learn about traditional diets, their health benefits, and try healthy versions of classic dishes. Interactive map and LLM explanations for each cuisine!`,
     path: '/games/food-journey',
     llm: true,
   },

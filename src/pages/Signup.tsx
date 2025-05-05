@@ -37,7 +37,7 @@ import { useNavigate } from 'react-router-dom';
       <svg className="h-14 w-14 text-white drop-shadow-lg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeWidth="2" d="M12 21c-4.97 0-9-3.58-9-8 0-2.13 1.06-4.08 2.8-5.47C7.5 5.09 9.62 3 12 3s4.5 2.09 6.2 4.53C19.94 8.92 21 10.87 21 13c0 4.42-4.03 8-9 8Zm0-11.5A2.5 2.5 0 1 0 12 15a2.5 2.5 0 0 0 0-5Z"/></svg>
     </div>
     <div className="text-center mt-6 mb-8">
-      <h2 className="text-3xl sm:text-4xl font-extrabold text-primary-700 mb-1 tracking-tight drop-shadow">Create Your <span className="text-green-600">NutriBot</span> Account</h2>
+      <h2 className="text-3xl sm:text-4xl font-extrabold text-primary-700 mb-1 tracking-tight drop-shadow">Create Your <span className="text-green-600">Zestly</span> Account</h2>
       <p className="text-base text-neutral-600">Join us to start your personalized nutrition journey</p>
     </div>
     <form onSubmit={handleSubmit} className="flex flex-col gap-3">
@@ -81,4 +81,4 @@ import { useNavigate } from 'react-router-dom';
   );
 };
 
-export default Signup;
+export default signup;

@@ -137,11 +137,11 @@ const SpeechModelPage: React.FC = () => {
           <div className="bg-white/80 backdrop-blur-lg rounded-3xl shadow-2xl overflow-hidden border border-primary-100 glass-card">
             <div className="bg-gradient-to-r from-primary-500 to-primary-400 text-white px-6 py-5 flex items-center gap-4 shadow-md">
               <span className="inline-flex items-center justify-center bg-white/20 rounded-full p-2 mr-2 shadow-lg">
-                <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="NutriBot Avatar" className="w-10 h-10 rounded-full object-cover border-2 border-primary-200 shadow" />
+                <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="Zestly Avatar" className="w-10 h-10 rounded-full object-cover border-2 border-primary-200 shadow" />
               </span>
               <div>
-                <h1 className="text-2xl font-extrabold drop-shadow tracking-tight">NutriBot Speech Model</h1>
-                <p className="text-primary-100 font-medium">Interact with NutriBot using your voice</p>
+                <h1 className="text-2xl font-extrabold drop-shadow tracking-tight">Zestly Speech Model</h1>
+                <p className="text-primary-100 font-medium">Interact with Zestly using your voice</p>
               </div>
               <div className="ml-auto">
                 <select
@@ -161,7 +161,7 @@ const SpeechModelPage: React.FC = () => {
             <div className="p-6">
               <div className="text-center mb-8">
                 <h2 className="text-lg font-semibold text-neutral-800 mb-2">
-                  Ask NutriBot about nutrition using your voice
+                  Ask Zestly about nutrition using your voice
                 </h2>
                 <p className="text-neutral-600">
                   Press the microphone button and speak your nutrition questions clearly
@@ -239,7 +239,7 @@ const SpeechModelPage: React.FC = () => {
                   className="bg-primary-50 p-6 rounded-lg border border-primary-200"
                 >
                   <div className="flex justify-between items-start mb-4">
-                    <h3 className="font-medium text-neutral-800">NutriBot's Response:</h3>
+                    <h3 className="font-medium text-neutral-800">Zestly's Response:</h3>
                     <div className="flex space-x-2">
                       <button
                         onClick={toggleSpeaking}
@@ -291,7 +291,7 @@ const SpeechModelPage: React.FC = () => {
                   tabIndex={0}
                 >
                   <span className="inline-block w-8 h-8 rounded-full overflow-hidden shadow group-hover:scale-110 transition-transform border-2 border-primary-100 bg-white">
-                    <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="NutriBot Avatar" className="w-full h-full object-cover" />
+                    <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="Zestly Avatar" className="w-full h-full object-cover" />
                   </span>
                   <span className="font-medium text-primary-900 group-hover:text-primary-700 transition-colors duration-200">{q}</span>
                 </button>

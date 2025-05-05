@@ -1,15 +1,14 @@
-import { useState } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { useState } from "react";
 
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { Loader2, Utensils } from "lucide-react";
-import { generateMealPlan, type MealPlan } from "@/lib/groq-api";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { generateMealPlan, type MealPlan } from "@/lib/groq-api";
+import { Loader2, Utensils } from "lucide-react";
 
 export default function MealPlannerPage() {
   const dietTypes = [
@@ -91,7 +90,7 @@ export default function MealPlannerPage() {
           <div className="bg-white rounded-lg shadow-md overflow-hidden border border-neutral-200 mb-8">
             <div className="bg-primary-500 text-white p-6 relative">
               <div className="flex items-center gap-4">
-                <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="NutriBot" className="w-16 h-16 rounded-full border-4 border-primary-400 shadow-xl bg-white object-cover mr-2 ring-4 ring-primary-200 animate-pulse-slow" />
+                <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="Zestly" className="w-16 h-16 rounded-full border-4 border-primary-400 shadow-xl bg-white object-cover mr-2 ring-4 ring-primary-200 animate-pulse-slow" />
                 <div>
                   <h1 className="text-2xl font-semibold tracking-tight">Meal Planner</h1>
                   <p className="text-primary-100 text-sm">Create your personalized meal plan based on your preferences and goals.</p>

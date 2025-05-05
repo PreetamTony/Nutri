@@ -43,7 +43,7 @@ const SeasonalFoodGame: React.FC = () => {
         {
           model: 'llama3-8b-8192',
           messages: [
-            { role: 'system', content: 'You are NutriBot, an expert on Indian seasonal foods and nutrition.' },
+            { role: 'system', content: 'You are Zestly, an expert on Indian seasonal foods and nutrition.' },
             { role: 'user', content: prompt },
           ],
           max_tokens: 512,
@@ -72,9 +72,9 @@ const SeasonalFoodGame: React.FC = () => {
           throw new Error('No valid food JSON found.');
         }
       } catch (e) {
-        console.error('NutriBot raw response:', content);
+        console.error('Zestly raw response:', content);
         setRawResponse(content || '');
-        setError('NutriBot could not fetch seasonal foods. Try again!');
+        setError('Zestly could not fetch seasonal foods. Try again!');
         setLoading(false);
         return;
       }
@@ -129,7 +129,7 @@ const SeasonalFoodGame: React.FC = () => {
             <Sparkles className="h-4 w-4 inline mr-1" /> Start
           </button>
         </div>
-        {loading && <div className="text-green-600 text-sm flex items-center gap-2 mb-2 animate-pulse"><Sparkles className="h-4 w-4" /> NutriBot is preparing the seasonal food list...</div>}
+        {loading && <div className="text-green-600 text-sm flex items-center gap-2 mb-2 animate-pulse"><Sparkles className="h-4 w-4" /> Zestly is preparing the seasonal food list...</div>}
         {error && <div className="text-red-600 text-sm mb-3 font-semibold">{error}</div>}
         {rawResponse && (
           <div className="mb-4 relative rounded-2xl bg-gradient-to-br from-yellow-50 to-green-50 border-2 border-green-200 shadow-lg flex flex-col items-start animate-fade-in overflow-hidden">
@@ -139,13 +139,13 @@ const SeasonalFoodGame: React.FC = () => {
               onClick={() => setRawResponse('')}
             >✕</button>
             <div className="flex items-center gap-3 px-4 pt-4 pb-1">
-              <img src="https://cdn-icons-png.flaticon.com/512/2726/2726015.png" alt="NutriBot" className="h-8 w-8 rounded-full border-2 border-green-300 bg-white" />
+              <img src="https://cdn-icons-png.flaticon.com/512/2726/2726015.png" alt="Zestly" className="h-8 w-8 rounded-full border-2 border-green-300 bg-white" />
               <div>
                 <div className="font-bold text-green-800 text-sm flex items-center gap-1">
-                  NutriBot Debug Output
+                  Zestly Debug Output
                   <span className="ml-1 text-xs bg-yellow-200 text-yellow-800 px-2 py-0.5 rounded-full font-semibold">Beta</span>
                 </div>
-                <div className="text-green-700 text-xs mt-0.5">This is NutriBot's raw reply. If the game doesn't work, copy this and share it for support!</div>
+                <div className="text-green-700 text-xs mt-0.5">This is Zestly's raw reply. If the game doesn't work, copy this and share it for support!</div>
               </div>
             </div>
             <pre className="bg-green-100/80 border border-green-200 rounded-xl text-xs text-green-900 p-4 mt-2 mx-4 mb-4 max-h-64 overflow-auto whitespace-pre-wrap break-words shadow-inner">

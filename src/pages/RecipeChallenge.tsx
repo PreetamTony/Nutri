@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Sparkles, Trophy, Star } from 'lucide-react';
+import { Sparkles, Star, Trophy } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
 
 // Only use Groq API variables from .env; all else is hardcoded
 const CHALLENGE = 'Make a protein-packed breakfast';
@@ -8,7 +8,7 @@ const INGREDIENTS = [
   'Eggs', 'Oats', 'Spinach', 'Paneer', 'Milk', 'Almonds', 'Banana', 'Chickpeas',
   'Yogurt', 'Tomato', 'Onion', 'Cheese', 'Chicken', 'Tofu', 'Peanuts', 'Broccoli'
 ];
-const NUTRIBOT_IMG = 'https://i.postimg.cc/WzfKp2mL/image.png';
+const Zestly_IMG = 'https://i.postimg.cc/WzfKp2mL/image.png';
 
 const API_URL = import.meta.env.VITE_GROQ_API_URL || 'https://api.groq.com/openai/v1/chat/completions';
 const API_KEY = import.meta.env.VITE_GROQ_API_KEY || '';
@@ -31,7 +31,7 @@ const RecipeChallenge: React.FC = () => {
 
   useEffect(() => {
     // Load leaderboard from localStorage
-    const data = localStorage.getItem('nutribot_leaderboard');
+    const data = localStorage.getItem('Zestly_leaderboard');
     if (data) setLeaderboard(JSON.parse(data));
   }, []);
 
@@ -49,13 +49,13 @@ const RecipeChallenge: React.FC = () => {
     setFeedback('');
     setScore(null);
     try {
-      const prompt = `You are NutriBot, a nutrition expert. Rate this recipe for the challenge: '${CHALLENGE}'.\nIngredients: ${selected.join(", ")}.\nGive a healthiness score out of 10, a creativity score out of 10, and a short feedback.`;
+      const prompt = `You are Zestly, a nutrition expert. Rate this recipe for the challenge: '${CHALLENGE}'.\nIngredients: ${selected.join(", ")}.\nGive a healthiness score out of 10, a creativity score out of 10, and a short feedback.`;
       const response = await axios.post(
         API_URL,
         {
           model: 'llama3-8b-8192',
           messages: [
-            { role: 'system', content: 'You are NutriBot, a nutrition expert for Indian meals. Give concise, actionable, and positive feedback.' },
+            { role: 'system', content: 'You are Zestly, a nutrition expert for Indian meals. Give concise, actionable, and positive feedback.' },
             { role: 'user', content: prompt },
           ],
           max_tokens: 180,
@@ -93,10 +93,10 @@ const RecipeChallenge: React.FC = () => {
         .sort((a, b) => b.score - a.score)
         .slice(0, 10);
       setLeaderboard(updatedLeaderboard);
-      localStorage.setItem('nutribot_leaderboard', JSON.stringify(updatedLeaderboard));
+      localStorage.setItem('Zestly_leaderboard', JSON.stringify(updatedLeaderboard));
     } catch (error) {
-      setFeedback('NutriBot could not rate your recipe at this time. Please try again.');
-      console.error('NutriBot API error:', error);
+      setFeedback('Zestly could not rate your recipe at this time. Please try again.');
+      console.error('Zestly API error:', error);
     }
     setLoading(false);
   };
@@ -105,10 +105,10 @@ const RecipeChallenge: React.FC = () => {
     <div className="min-h-screen bg-gradient-to-br from-primary-50 to-primary-200 flex flex-col items-center py-10">
       <div className="bg-white/90 shadow-xl rounded-2xl p-8 max-w-2xl w-full border-t-8 border-primary-400 animate-fade-in">
         <div className="flex items-center mb-6">
-          <img src={NUTRIBOT_IMG} alt="NutriBot" className="w-16 h-16 rounded-full border-4 border-primary-400 shadow bg-white mr-4" />
+          <img src={Zestly_IMG} alt="Zestly" className="w-16 h-16 rounded-full border-4 border-primary-400 shadow bg-white mr-4" />
           <div>
             <h2 className="text-2xl font-bold text-primary-700 mb-1 flex items-center gap-2">
-              <Sparkles className="h-6 w-6 text-yellow-500" /> NutriBot Cooking Show
+              <Sparkles className="h-6 w-6 text-yellow-500" /> Zestly Cooking Show
             </h2>
             <p className="text-primary-500 text-sm">{CHALLENGE}</p>
           </div>
@@ -146,11 +146,11 @@ const RecipeChallenge: React.FC = () => {
           </button>
         </div>
         {loading && (
-          <div className="text-primary-600 text-sm flex items-center gap-2 mb-2 animate-pulse"><Sparkles className="h-4 w-4" /> NutriBot is rating your recipe...</div>
+          <div className="text-primary-600 text-sm flex items-center gap-2 mb-2 animate-pulse"><Sparkles className="h-4 w-4" /> Zestly is rating your recipe...</div>
         )}
         {feedback && (
           <div className="mt-3 p-4 rounded bg-primary-50 border border-primary-200 text-primary-800 animate-fade-in text-base">
-            <strong>NutriBot:</strong> {feedback}
+            <strong>Zestly:</strong> {feedback}
             {score !== null && (
               <div className="mt-2 flex gap-2 items-center text-primary-700 font-semibold">
                 <Star className="h-5 w-5 text-yellow-400" /> Score: {score} / 20

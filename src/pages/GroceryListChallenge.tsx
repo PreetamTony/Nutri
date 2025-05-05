@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Info, IndianRupee } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { callNutriBotLLMFeedback } from '../lib/llm-feedback';
+import { callZestlyLLMFeedback } from '../lib/llm-feedback';
 
 // Example food items (Indian, healthy, affordable)
 const FOOD_ITEMS = [
@@ -84,11 +84,11 @@ const GroceryListChallenge: React.FC = () => {
 
   return (
     <div className="max-w-2xl mx-auto mt-10 bg-white rounded-2xl shadow-lg border border-neutral-200 overflow-hidden">
-      {/* Header with NutriBot avatar */}
+      {/* Header with Zestly avatar */}
       <div className="flex items-center gap-4 px-6 py-5 border-b border-neutral-100 bg-white">
-        <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="NutriBot" className="w-12 h-12 rounded-full border-2 border-primary-200 object-cover" />
+        <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="Zestly" className="w-12 h-12 rounded-full border-2 border-primary-200 object-cover" />
         <div className="flex-1">
-          <h2 className="text-2xl font-bold text-primary-700">NutriBot's Grocery List Challenge</h2>
+          <h2 className="text-2xl font-bold text-primary-700">Zestly's Grocery List Challenge</h2>
           <p className="text-base text-neutral-500">Plan a healthy, balanced, and affordable shopping list!</p>
         </div>
       </div>
@@ -225,21 +225,21 @@ const GroceryListChallenge: React.FC = () => {
                     const item = FOOD_ITEMS.find(i => i.id === id);
                     return item ? {name: item.name, type: item.type, price: item.price} : null;
                   }).filter(Boolean) as {name: string, type: string, price: number}[];
-                  const feedback = await callNutriBotLLMFeedback(items);
+                  const feedback = await callZestlyLLMFeedback(items);
                   setLlmFeedback(feedback);
                   setLlmLoading(false);
                 }}
               >
-                {llmLoading ? 'Getting NutriBot Feedback...' : 'Get NutriBot LLM Feedback'}
+                {llmLoading ? 'Getting Zestly Feedback...' : 'Get Zestly LLM Feedback'}
               </button>
               {llmFeedback && (
                 <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.4}} className="mt-3 p-3 rounded bg-neutral-50 border border-neutral-200 text-neutral-800">
-                  <strong>NutriBot:</strong> {llmFeedback}
+                  <strong>Zestly:</strong> {llmFeedback}
                 </motion.div>
               )}
             </div>
             <div className="mb-4">
-              <strong>NutriBot says:</strong> {selected.map(id => {
+              <strong>Zestly says:</strong> {selected.map(id => {
                 const item = FOOD_ITEMS.find(i => i.id === id);
                 return item ? item.name : null;
               }).filter(Boolean).join(', ')}

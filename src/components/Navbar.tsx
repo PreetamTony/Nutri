@@ -68,8 +68,8 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2 mr-8">
-            <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="NutriBot Logo" className="h-8 w-8 rounded object-cover" />
-            <span className="text-xl font-display font-bold text-primary-500">NutriBot</span>
+            <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="Zestly Logo" className="h-8 w-8 rounded object-cover" />
+            <span className="text-xl font-display font-bold text-primary-500">Zestly</span>
           </Link>
 
           {/* Desktop Navigation */}

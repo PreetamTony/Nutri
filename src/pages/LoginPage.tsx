@@ -1,9 +1,8 @@
+import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 
-// Avatar image (use NutriBot logo)
 const AVATAR_SRC = 'https://i.postimg.cc/WzfKp2mL/image.png';
 
 const LoginPage: React.FC = () => {
@@ -42,7 +41,7 @@ const LoginPage: React.FC = () => {
           <div className="bg-gradient-to-br from-primary-400 via-green-300 to-white p-2 rounded-full shadow-lg animate-fade-in">
             <img
               src={AVATAR_SRC}
-              alt="NutriBot Logo"
+              alt="Zestly Logo"
               className="h-20 w-20 rounded-full border-4 border-white shadow-xl object-cover bg-white animate-bounce-slow"
             />
           </div>
@@ -56,7 +55,7 @@ const LoginPage: React.FC = () => {
         <div className="text-center mt-10 mb-8">
           <h1 className="text-4xl font-extrabold text-primary-700 mb-2 tracking-tight drop-shadow-xl">Welcome Back!</h1>
           <div className="flex items-center justify-center gap-2 mb-2">
-            <span className="text-green-600 font-bold text-2xl">NutriBot</span>
+            <span className="text-green-600 font-bold text-2xl">Zestly</span>
             <span className="text-base text-primary-500 font-semibold bg-primary-100 px-3 py-1 rounded-full shadow">AI Nutrition</span>
           </div>
           <p className="text-base text-neutral-600">Fuel your best self. Log in to continue your nutrition journey.</p>

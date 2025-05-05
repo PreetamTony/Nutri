@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { CheckCircle2, XCircle, Info, Sparkles } from 'lucide-react';
-import { callNutriBotLLMFeedback } from '../lib/llm-feedback';
+import { callZestlyLLMFeedback } from '../lib/llm-feedback';
 
-// Example Indian food pairings for nutrient synergy
+// Example Indian food pairings for Zestly synergy
 const PAIRS = [
   {
     id: 1,
@@ -16,7 +16,7 @@ const PAIRS = [
     foodA: 'Rice',
     foodB: 'Curd (Yogurt)',
     correct: true,
-    reason: 'Probiotics in curd improve digestion and nutrient absorption from rice.',
+    reason: 'Probiotics in curd improve digestion and Zestly absorption from rice.',
   },
   {
     id: 3,
@@ -110,20 +110,20 @@ const FoodPairingChallenge: React.FC = () => {
   const q = questions[current];
 
   // LLM prompt for the current question
-  const llmPrompt = `Is pairing "${q.foodA}" with "${q.foodB}" a good idea for nutrient synergy in Indian meals? Explain the science in simple terms for a layperson.`;
+  const llmPrompt = `Is pairing "${q.foodA}" with "${q.foodB}" a good idea for Zestly synergy in Indian meals? Explain the science in simple terms for a layperson.`;
 
   const handleLlmFeedback = async () => {
     setLlmLoading(true);
     setLlmFeedback('');
     try {
       // You can replace this with a real LLM API call
-      const feedback = await callNutriBotLLMFeedback([
+      const feedback = await callZestlyLLMFeedback([
         { name: q.foodA, type: '', price: 0 },
         { name: q.foodB, type: '', price: 0 },
       ]);
       setLlmFeedback(feedback);
     } catch (e) {
-      setLlmFeedback('Sorry, NutriBot could not provide feedback at this time.');
+      setLlmFeedback('Sorry, Zestly could not provide feedback at this time.');
     }
     setLlmLoading(false);
   };
@@ -131,14 +131,14 @@ const FoodPairingChallenge: React.FC = () => {
   return (
     <div className="max-w-xl mx-auto mt-12 bg-white/80 rounded-xl shadow-lg p-8 border border-primary-100">
       <div className="flex items-center mb-6">
-        <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="NutriBot" className="w-14 h-14 rounded-full border-4 border-primary-400 shadow bg-white mr-4" />
+        <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="Zestly" className="w-14 h-14 rounded-full border-4 border-primary-400 shadow bg-white mr-4" />
         <div>
           <h2 className="text-xl font-semibold text-primary-700 mb-1">Food Pairing Challenge</h2>
-          <p className="text-primary-500 text-sm">Pair foods for better nutrient absorption!</p>
+          <p className="text-primary-500 text-sm">Pair foods for better Zestly absorption!</p>
         </div>
       </div>
       <div className="mb-4 text-neutral-800 text-lg">
-        <span className="font-semibold">Q{current + 1}:</span> Can you pair <span className="text-primary-600 font-semibold">{q.foodA}</span> with <span className="text-primary-600 font-semibold">{q.foodB}</span> for better nutrition?
+        <span className="font-semibold">Q{current + 1}:</span> Can you pair <span className="text-primary-600 font-semibold">{q.foodA}</span> with <span className="text-primary-600 font-semibold">{q.foodB}</span> for better Zestly nutrition?
       </div>
       <div className="flex gap-6 mb-6">
         <button
@@ -182,11 +182,11 @@ const FoodPairingChallenge: React.FC = () => {
             disabled={llmLoading}
           >
             <Sparkles className="h-4 w-4" />
-            {llmLoading ? 'NutriBot is thinking...' : 'Ask NutriBot for AI Feedback'}
+            {llmLoading ? 'Zestly is thinking...' : 'Ask Zestly for AI Feedback'}
           </button>
           {llmFeedback && (
             <div className="mt-3 p-3 rounded bg-neutral-50 border border-neutral-200 text-neutral-800 animate-fade-in text-sm">
-              <strong>NutriBot:</strong> {llmFeedback}
+              <strong>Zestly:</strong> {llmFeedback}
             </div>
           )}
         </div>

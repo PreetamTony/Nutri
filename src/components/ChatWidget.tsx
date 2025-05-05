@@ -9,7 +9,7 @@ const ChatWidget: React.FC = () => {
     {
       id: '1',
       role: 'assistant',
-      content: 'Hi! I\'m NutriBot, your personal nutrition assistant. How can I help you today?',
+      content: 'Hi! I\'m Zestly, your personal nutrition assistant. How can I help you today?',
       timestamp: new Date()
     }
   ]);
@@ -51,7 +51,7 @@ const ChatWidget: React.FC = () => {
           messages: [
             { 
               role: 'system', 
-              content: 'You are NutriBot, an AI nutrition assistant. Provide helpful, accurate nutrition advice. Focus on being supportive, educational, and motivational. Keep responses concise and relevant to nutrition, diet, and healthy eating habits. Always suggest evidence-based information.'
+              content: 'You are Zestly, an AI nutrition assistant. Provide helpful, accurate nutrition advice. Focus on being supportive, educational, and motivational. Keep responses concise and relevant to nutrition, diet, and healthy eating habits. Always suggest evidence-based information.'
             },
             ...messages.map(msg => ({ role: msg.role, content: msg.content })),
             { role: 'user', content: input }
@@ -130,7 +130,7 @@ const ChatWidget: React.FC = () => {
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask NutriBot something..."
+            placeholder="Ask Zestly something..."
             className="flex-1 border rounded-l-lg border-neutral-300 py-2 px-3 focus:outline-none focus:ring-1 focus:ring-primary-400"
             disabled={isLoading || !currentUser}
           />
@@ -144,7 +144,7 @@ const ChatWidget: React.FC = () => {
         </div>
         {!currentUser && (
           <p className="text-xs text-neutral-500 mt-2 text-center">
-            Please log in to chat with NutriBot
+            Please log in to chat with Zestly
           </p>
         )}
       </form>

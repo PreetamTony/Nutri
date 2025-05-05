@@ -13,7 +13,7 @@ export type ChatCompletionRequestMessage = {
  * @param selectedItems Array of selected food items (name, type, price)
  * @param prompt Optional custom prompt (for food pairing, etc)
  */
-export async function callNutriBotLLMFeedback(
+export async function callZestlyLLMFeedback(
   selectedItems: Array<{ name: string; type?: string; price?: number }>,
   prompt?: string
 ): Promise<string> {
@@ -28,7 +28,7 @@ export async function callNutriBotLLMFeedback(
   }
 
   const messages: ChatCompletionRequestMessage[] = [
-    { role: 'system', content: 'You are NutriBot, a nutrition expert for Indian meals. Give concise, actionable, and positive feedback.' },
+    { role: 'system', content: 'You are Zestly, a nutrition expert for Indian meals. Give concise, actionable, and positive feedback.' },
     { role: 'user', content: userPrompt },
   ];
 
@@ -47,16 +47,16 @@ export async function callNutriBotLLMFeedback(
     const data = response.data;
     if (!data.choices || !data.choices[0] || !data.choices[0].message || !data.choices[0].message.content) {
       console.error('Groq API response missing choices or message:', data);
-      return 'NutriBot could not provide feedback because the AI service did not return a valid response.';
+      return 'Zestly could not provide feedback because the AI service did not return a valid response.';
     }
     return data.choices[0].message.content.trim();
   } catch (error: any) {
-    console.error('NutriBot LLM API call failed:', error);
+    console.error('Zestly LLM API call failed:', error);
     if (axios.isAxiosError(error)) {
       const apiErrorMsg = error.response?.data?.error?.message || error.message || 'Unknown error';
-      return `NutriBot error: ${error.response?.status} ${error.response?.statusText}. ${apiErrorMsg}`;
+      return `Zestly error: ${error.response?.status} ${error.response?.statusText}. ${apiErrorMsg}`;
     }
-    return 'NutriBot failed to connect to the AI service.';
+    return 'Zestly failed to connect to the AI service.';
   }
 }
 

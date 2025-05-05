@@ -23,7 +23,7 @@ const ResearchPapersPage: React.FC = () => {
       <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
         <img
           src={AVATAR_SRC}
-          alt="NutriBot Logo"
+          alt="Zestly Logo"
           className="h-20 w-20 rounded-full border-2 border-neutral-200 shadow mb-4 object-cover"
         />
         <h1 className="text-2xl font-bold text-neutral-800 mb-2">Research Papers</h1>

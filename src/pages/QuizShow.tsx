@@ -45,7 +45,7 @@ const QuizShow: React.FC = () => {
         {
           model: 'llama3-8b-8192',
           messages: [
-            { role: 'system', content: 'You are NutriBot, a nutrition and quiz expert.' },
+            { role: 'system', content: 'You are Zestly, a nutrition and quiz expert.' },
             { role: 'user', content: prompt },
           ],
           max_tokens: 512,
@@ -69,7 +69,7 @@ const QuizShow: React.FC = () => {
           throw new Error('No valid quiz JSON found.');
         }
       } catch (e) {
-        setError('NutriBot could not generate the quiz. Try again!');
+        setError('Zestly could not generate the quiz. Try again!');
         setLoading(false);
         return;
       }
@@ -135,7 +135,7 @@ const QuizShow: React.FC = () => {
             <Sparkles className="h-4 w-4 inline mr-1" /> Start Quiz
           </button>
         </div>
-        {loading && <div className="text-green-600 text-sm flex items-center gap-2 mb-2 animate-pulse"><Sparkles className="h-4 w-4" /> NutriBot is preparing your quiz...</div>}
+        {loading && <div className="text-green-600 text-sm flex items-center gap-2 mb-2 animate-pulse"><Sparkles className="h-4 w-4" /> Zestly is preparing your quiz...</div>}
         {error && <div className="text-red-600 text-sm mb-3 font-semibold">{error}</div>}
         {questions.length > 0 && !showResult && (
           <div className="animate-fade-in">

@@ -22,7 +22,7 @@ const ChatButton: React.FC = () => {
             className="bg-white rounded-lg shadow-xl mb-4 w-72 sm:w-96 h-96 max-h-[80vh] overflow-hidden"
           >
             <div className="p-4 bg-primary-500 text-white flex justify-between items-center">
-              <h3 className="font-medium">NutriBot Assistant</h3>
+              <h3 className="font-medium">Zestly assistant</h3>
               <button onClick={toggleChat} className="text-white hover:bg-primary-600 rounded-full p-1">
                 <X size={18} />
               </button>

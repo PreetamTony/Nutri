@@ -22,7 +22,7 @@ const defaultAvatar = 'https://i.postimg.cc/WzfKp2mL/image.png';
 const initialPosts: Post[] = [
   {
     id: 1,
-    author: 'NutriBot',
+    author: 'Zestly',
     avatar: defaultAvatar,
     content: 'Welcome to the Community Chatroom! Ask questions, share healthy hacks, or motivate others.',
     timestamp: new Date().toLocaleString(),

@@ -39,7 +39,7 @@ const VirtualFoodJourney: React.FC = () => {
     setStep(null);
     setRawResponse('');
     try {
-      const prompt = `You are NutriBot, a friendly nutritionist. For ${country}, describe one iconic healthy dish from its ${cuisine} cuisine. Give:
+      const prompt = `You are Zestly, a friendly nutritionist. For ${country}, describe one iconic healthy dish from its ${cuisine} cuisine. Give:
 - Dish name
 - A healthy version of the dish (with tips)
 - Nutrition facts (short)
@@ -50,7 +50,7 @@ Respond as a JSON object with keys: dish, healthyVersion, nutritionFacts, funFac
         {
           model: 'llama3-8b-8192',
           messages: [
-            { role: 'system', content: 'You are NutriBot, a global cuisine and nutrition expert.' },
+            { role: 'system', content: 'You are Zestly, a global cuisine and nutrition expert.' },
             { role: 'user', content: prompt },
           ],
           max_tokens: 400,
@@ -78,7 +78,7 @@ Respond as a JSON object with keys: dish, healthyVersion, nutritionFacts, funFac
         }
       } catch (e) {
         setRawResponse(content || '');
-        setError('NutriBot could not parse the dish info. Try again!');
+        setError('Zestly could not parse the dish info. Try again!');
         setLoading(false);
         return;
       }
@@ -114,7 +114,7 @@ Respond as a JSON object with keys: dish, healthyVersion, nutritionFacts, funFac
         </div>
         <p className="text-lg text-blue-800 font-semibold text-center max-w-lg">
           <Sparkles className="inline h-5 w-5 text-yellow-400 animate-bounce" />
-          Travel the world with NutriBot and discover healthy global cuisines in the Food Journey!
+          Travel the world with Zestly and discover healthy global cuisines in the Food Journey!
         </p>
       </div>
       <div className="bg-white/90 shadow-2xl rounded-2xl p-8 max-w-xl w-full border-t-8 border-blue-400 animate-fade-in">
@@ -138,7 +138,7 @@ Respond as a JSON object with keys: dish, healthyVersion, nutritionFacts, funFac
             Next ▶
           </button>
         </div>
-        {loading && <div className="text-blue-600 text-sm flex items-center gap-2 mb-2 animate-pulse"><Sparkles className="h-4 w-4" /> NutriBot is preparing your journey stop...</div>}
+        {loading && <div className="text-blue-600 text-sm flex items-center gap-2 mb-2 animate-pulse"><Sparkles className="h-4 w-4" /> Zestly is preparing your journey stop...</div>}
         {error && <div className="text-red-600 text-sm mb-3 font-semibold">{error}</div>}
         {rawResponse && (
           <div className="mb-4 relative rounded-2xl bg-gradient-to-br from-yellow-50 to-blue-50 border-2 border-blue-200 shadow-lg flex flex-col items-start animate-fade-in overflow-hidden">
@@ -148,13 +148,13 @@ Respond as a JSON object with keys: dish, healthyVersion, nutritionFacts, funFac
               onClick={() => setRawResponse('')}
             >✕</button>
             <div className="flex items-center gap-3 px-4 pt-4 pb-1">
-              <img src="https://cdn-icons-png.flaticon.com/512/2726/2726015.png" alt="NutriBot" className="h-8 w-8 rounded-full border-2 border-blue-300 bg-white" />
+              <img src="https://cdn-icons-png.flaticon.com/512/2726/2726015.png" alt="Zestly" className="h-8 w-8 rounded-full border-2 border-blue-300 bg-white" />
               <div>
                 <div className="font-bold text-blue-800 text-sm flex items-center gap-1">
-                  NutriBot Debug Output
+                  Zestly Debug Output
                   <span className="ml-1 text-xs bg-yellow-200 text-yellow-800 px-2 py-0.5 rounded-full font-semibold">Beta</span>
                 </div>
-                <div className="text-blue-700 text-xs mt-0.5">This is NutriBot's raw reply. If the game doesn't work, copy this and share it for support!</div>
+                <div className="text-blue-700 text-xs mt-0.5">This is Zestly's raw reply. If the game doesn't work, copy this and share it for support!</div>
               </div>
             </div>
             <pre className="bg-blue-100/80 border border-blue-200 rounded-xl text-xs text-blue-900 p-4 mt-2 mx-4 mb-4 max-h-64 overflow-auto whitespace-pre-wrap break-words shadow-inner">

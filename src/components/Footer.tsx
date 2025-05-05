@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Apple className="h-7 w-7 text-primary-400" />
-              <span className="text-xl font-display font-bold text-white">NutriBot</span>
+              <span className="text-xl font-display font-bold text-white">Zestly</span>
             </div>
             <p className="text-neutral-400 max-w-xs">
               An AI-powered personal nutrition assistant designed to promote healthier eating habits, 
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
                 <Link to="/about" className="text-neutral-400 hover:text-white transition-colors">About</Link>
               </li>
               <li>
-                <Link to="/chat" className="text-neutral-400 hover:text-white transition-colors">NutriBot Chat</Link>
+                <Link to="/chat" className="text-neutral-400 hover:text-white transition-colors">Zestly Chat</Link>
               </li>
               <li>
                 <Link to="/meal-planner" className="text-neutral-400 hover:text-white transition-colors">Meal Planner</Link>
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-neutral-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-neutral-400 text-sm">
-            &copy; {new Date().getFullYear()} NutriBot. All rights reserved.
+            &copy; {new Date().getFullYear()} Zestly. All rights reserved.
           </p>
           <p className="text-neutral-400 text-sm mt-2 md:mt-0">
             Built by Preetam Tony J ✨, with love for tech, health, and innovation ❤️

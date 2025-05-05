@@ -17,7 +17,7 @@ const AboutPage: React.FC = () => {
           <div className="bg-primary-500 rounded-lg shadow-md overflow-hidden">
             <div className="p-8 text-white text-center">
               <h1 className="text-3xl md:text-4xl font-display font-bold mb-4">
-                About NutriBot
+                About Zestly
               </h1>
               <p className="text-primary-100 max-w-2xl mx-auto text-lg mb-8">
                 We're on a mission to make nutrition science accessible and personalized
@@ -53,12 +53,12 @@ const AboutPage: React.FC = () => {
               </h2>
               <div className="space-y-4 text-neutral-700">
                 <p>
-                  NutriBot was born out of a simple observation: despite the abundance of nutrition information available today,
+                  Zestly was born out of a simple observation: despite the abundance of nutrition information available today,
                   people still struggle to make healthy eating choices that are personalized to their unique needs and preferences.
                 </p>
                 <p>
                   Founded in 2025 by Preetam Tony J., a health-tech entrepreneur passionate about the intersection of nutrition science and artificial intelligence,
-                  NutriBot aims to democratize access to personalized nutrition guidance.
+                  Zestly aims to democratize access to personalized nutrition guidance.
                 </p>
               </div>
             </div>
@@ -203,7 +203,7 @@ const AboutPage: React.FC = () => {
             <div className="p-8">
               <h2 className="text-2xl font-bold mb-4">Ready to transform your nutrition habits?</h2>
               <p className="text-primary-100 max-w-2xl mx-auto mb-6">
-                Join thousands of users who have already improved their eating habits with NutriBot.
+                Join thousands of users who have already improved their eating habits with Zestly.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link

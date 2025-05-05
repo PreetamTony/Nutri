@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ChefHat, Search, Plus, Check, Filter, Clock, Salad, X } from 'lucide-react';
+import { Check, ChefHat, Clock, Plus, Salad, X } from 'lucide-react';
+import React, { useState } from 'react';
 import { generateRecipesFromIngredients, Recipe } from '../lib/groq-api';
 
 const AVATAR_SRC = 'https://i.postimg.cc/WzfKp2mL/image.png';
@@ -67,7 +67,7 @@ const RecipeGeneratorPage: React.FC = () => {
             <div className="bg-primary-500 text-white p-6 relative">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <img src={AVATAR_SRC} alt="NutriBot" className="w-14 h-14 rounded-full border-4 border-white shadow-md bg-white object-cover mr-2" />
+                  <img src={AVATAR_SRC} alt="Zestly" className="w-14 h-14 rounded-full border-4 border-white shadow-md bg-white object-cover mr-2" />
                   <div>
                     <h1 className="text-2xl font-semibold tracking-tight">Recipe Generator</h1>
                     <p className="text-primary-100 text-sm">Turn your available ingredients into delicious meals</p>

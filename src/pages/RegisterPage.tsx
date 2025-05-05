@@ -1,9 +1,9 @@
+import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 
-// Avatar image (use NutriBot logo)
+
 const AVATAR_SRC = 'https://i.postimg.cc/WzfKp2mL/image.png';
 
 const RegisterPage: React.FC = () => {
@@ -63,7 +63,7 @@ const RegisterPage: React.FC = () => {
         <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-10">
           <img
             src={AVATAR_SRC}
-            alt="NutriBot Logo"
+            alt="Zestly Logo"
             className="h-14 w-14 rounded-full border-2 border-white shadow object-cover bg-white"
           />
         </div>
@@ -74,7 +74,7 @@ const RegisterPage: React.FC = () => {
           className="relative w-full max-w-sm rounded-2xl shadow-xl bg-white/60 backdrop-blur-lg border border-primary-100 p-6 flex flex-col gap-4"
         >
         <div className="text-center mt-6 mb-8">
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-primary-700 mb-1 tracking-tight drop-shadow">Create your <span className="text-green-600">NutriBot</span> account</h1>
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-primary-700 mb-1 tracking-tight drop-shadow">Create your <span className="text-green-600">Zestly</span> account</h1>
           <p className="text-base text-neutral-600">Start your journey to healthier eating habits</p>
         </div>
         

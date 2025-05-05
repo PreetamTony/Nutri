@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { login, googleLogin, resetPassword } from '../services/authService';
 import { useNavigate } from 'react-router-dom';
+import { googleLogin, login, resetPassword } from '../services/authService';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -46,7 +46,7 @@ const Login: React.FC = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-primary-50 to-white px-4">
   <div className="w-full max-w-sm bg-white/80 backdrop-blur-lg shadow-xl rounded-2xl p-8 flex flex-col gap-4">
-    <h2 className="text-3xl font-extrabold text-primary-700 mb-2 text-center tracking-tight">Sign In to NutriBot</h2>
+    <h2 className="text-3xl font-extrabold text-primary-700 mb-2 text-center tracking-tight">Sign In to Zestly</h2>
     {!showReset ? (
       <>
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">

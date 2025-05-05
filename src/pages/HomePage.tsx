@@ -1,8 +1,7 @@
+import { motion as m, motion } from 'framer-motion';
+import { ArrowRight, Calculator, CalendarCheck, MessagesSquare, Rabbit, Salad, Scan } from 'lucide-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowRight, MessagesSquare, CalendarCheck, Scan, Salad, Calculator, Rabbit, Activity } from 'lucide-react';
-import { motion as m } from 'framer-motion';
 
 const HomePage: React.FC = () => {
   const fadeIn = {
@@ -77,7 +76,7 @@ const HomePage: React.FC = () => {
                 <div className="bg-white/60 backdrop-blur-lg rounded-2xl shadow-2xl p-6 max-w-xs border border-primary-100 glass-card">
                   <div className="flex items-center space-x-3 mb-2">
                     <div className="w-3 h-3 rounded-full bg-primary-500 animate-pulse"></div>
-                    <p className="font-semibold text-primary-700">NutriBot says: </p>
+                    <p className="font-semibold text-primary-700">Zestly says: </p>
                   </div>
                   <p className="text-neutral-700 text-base italic">
                     “Did you know? Adding colorful vegetables to every meal helps ensure you get a wide range of essential nutrients.”
@@ -107,7 +106,7 @@ const HomePage: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              NutriBot🤖 combines AI, nutrition science, and personalization to help you achieve your health goals and develop sustainable eating habits.
+              Zestly🤖 combines AI, nutrition science, and personalization to help you achieve your health goals and develop sustainable eating habits.
             </motion.p>
           </div>
           
@@ -170,7 +169,7 @@ const HomePage: React.FC = () => {
               className="text-4xl md:text-5xl font-display font-extrabold text-primary-700 mb-6 drop-shadow-lg tracking-tight"
               {...fadeIn}
             >
-              How NutriBot Works
+              How Zestly Works
             </motion.h2>
             <motion.p 
               className="text-lg md:text-xl text-primary-700/80"
@@ -227,7 +226,7 @@ const HomePage: React.FC = () => {
                 Ready to transform your nutrition habits?
               </h2>
               <p className="text-primary-100 max-w-lg">
-                Start your journey towards better health with personalized guidance from NutriBot. Sign up today and discover how easy healthy eating can be!
+                Start your journey towards better health with personalized guidance from Zestly. Sign up today and discover how easy healthy eating can be!
               </p>
             </div>
             <div className="flex flex-wrap gap-4">
@@ -264,7 +263,7 @@ const HomePage: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Thousands of users have transformed their eating habits with NutriBot
+              Thousands of users have transformed their eating habits with Zestly
             </motion.p>
           </div>
           
@@ -351,7 +350,7 @@ const features = [
 const steps = [
   {
     title: "Share Your Goals 🎯",
-    description: "Tell NutriBot about your dietary preferences, restrictions, and health goals to get personalized guidance. 🗣️"
+    description: "Tell Zestly about your dietary preferences, restrictions, and health goals to get personalized guidance. 🗣️"
   },
   {
     title: "Get Personalized Plans 📋",
@@ -366,19 +365,19 @@ const steps = [
 // Testimonials data
 const testimonials = [
   {
-    quote: "NutriBot has completely transformed my eating habits. The personalized meal plans fit perfectly with my busy schedule, and I've never felt healthier.",
+    quote: "Zestly has completely transformed my eating habits. The personalized meal plans fit perfectly with my busy schedule, and I've never felt healthier.",
     name: "Samantha",
     role: "Actress",
     avatar: "https://i.pinimg.com/736x/69/b1/34/69b134dff5b8c1b0e0dfd48ca8263292.jpg"
   },
   {
-    quote: "As a student with a tight budget, NutriBot has been a game-changer. The recipe generator gives me healthy options with whatever ingredients I have available.",
+    quote: "As a student with a tight budget, Zestly has been a game-changer. The recipe generator gives me healthy options with whatever ingredients I have available.",
     name: "Shahrukh Khan",
     role: "College Student",
     avatar: "https://i.pinimg.com/736x/34/3e/5a/343e5a48acc631d1065b7b77b5439432.jpg"
   },
   {
-    quote: "I've tried many nutrition apps, but NutriBot stands out with its personalized AI chat. It's like having a nutritionist in my pocket 24/7.",
+    quote: "I've tried many nutrition apps, but Zestly stands out with its personalized AI chat. It's like having a nutritionist in my pocket 24/7.",
     name: "Sita",
     role: "Princess",
     avatar: "https://i.pinimg.com/736x/14/11/2b/14112bcd93b2ecc50a947bc396998748.jpg"

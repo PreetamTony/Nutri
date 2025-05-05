@@ -125,10 +125,10 @@ export const DashboardProvider: React.FC<{ children: React.ReactNode }> = ({ chi
 
   useEffect(() => {
     // Load data from localStorage
-    const savedMeals = localStorage.getItem('nutriBotMeals');
-    const savedWater = localStorage.getItem('nutriBotWater');
-    const savedAchievements = localStorage.getItem('nutriBotAchievements');
-    const savedStreak = localStorage.getItem('nutriBotStreak');
+    const savedMeals = localStorage.getItem('ZestlyMeals');
+    const savedWater = localStorage.getItem('ZestlyWater');
+    const savedAchievements = localStorage.getItem('ZestlyAchievements');
+    const savedStreak = localStorage.getItem('ZestlyStreak');
 
     if (savedMeals) setMeals(JSON.parse(savedMeals));
     if (savedWater) setWaterIntake(JSON.parse(savedWater));
@@ -138,10 +138,10 @@ export const DashboardProvider: React.FC<{ children: React.ReactNode }> = ({ chi
 
   useEffect(() => {
     // Save data to localStorage
-    localStorage.setItem('nutriBotMeals', JSON.stringify(meals));
-    localStorage.setItem('nutriBotWater', JSON.stringify(waterIntake));
-    localStorage.setItem('nutriBotAchievements', JSON.stringify(achievements));
-    localStorage.setItem('nutriBotStreak', JSON.stringify(streak));
+    localStorage.setItem('ZestlyMeals', JSON.stringify(meals));
+    localStorage.setItem('ZestlyWater', JSON.stringify(waterIntake));
+    localStorage.setItem('ZestlyAchievements', JSON.stringify(achievements));
+    localStorage.setItem('ZestlyStreak', JSON.stringify(streak));
   }, [meals, waterIntake, achievements, streak]);
 
   return (

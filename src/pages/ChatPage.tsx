@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Mic, MicOff } from 'lucide-react';
+import { Mic, MicOff, Send } from 'lucide-react';
+import React, { useRef, useState } from 'react';
 import { groqService } from '../services/api';
 import { ChatMessage } from '../types';
 
@@ -9,7 +9,7 @@ const ChatPage: React.FC = () => {
     {
       id: '1',
       role: 'assistant',
-      content: 'Hi! I\'m NutriBot, your personal nutrition assistant. How can I help you with your nutrition goals today?',
+      content: 'Hi! I\'m Zestly, your personal nutrition assistant. How can I help you with your nutrition goals today?',
       timestamp: new Date()
     }
   ]);
@@ -104,10 +104,10 @@ const ChatPage: React.FC = () => {
           >
             <div className="bg-gradient-to-r from-primary-500 to-primary-400 text-white px-6 py-5 flex items-center gap-4 shadow-md">
               <span className="inline-flex items-center justify-center bg-white/20 rounded-full p-2 mr-2 shadow-lg">
-  <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="NutriBot Avatar" className="w-10 h-10 rounded-full object-cover border-2 border-primary-200 shadow" />
+  <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="Eatelligence Avatar" className="w-10 h-10 rounded-full object-cover border-2 border-primary-200 shadow" />
 </span>
               <div>
-                <h1 className="text-2xl font-extrabold drop-shadow tracking-tight">NutriBot Chat Assistant</h1>
+                <h1 className="text-2xl font-extrabold drop-shadow tracking-tight">Zestly Chat Assistant</h1>
                 <p className="text-primary-100 text-sm font-medium">Ask me anything about nutrition, diet plans, or healthy eating habits</p>
               </div>
             </div>
@@ -131,7 +131,7 @@ const ChatPage: React.FC = () => {
     >
       <div className="flex items-center gap-2 mb-1">
         {message.role === 'assistant' && (
-          <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="NutriBot Avatar" className="w-8 h-8 rounded-full object-cover border border-primary-200 shadow" />
+          <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="Eatelligence Avatar" className="w-8 h-8 rounded-full object-cover border border-primary-200 shadow" />
         )}
         <p className="whitespace-pre-line leading-relaxed">{message.content}</p>
       </div>
@@ -179,7 +179,7 @@ const ChatPage: React.FC = () => {
                   type="text"
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
-                  placeholder="Ask NutriBot something..."
+                  placeholder="Ask Zestly something..."
                   className="flex-1 border-none rounded-full bg-white/70 shadow px-5 py-3 focus:outline-none focus:ring-2 focus:ring-primary-400 text-base transition"
                   disabled={isLoading || listening}
                 />
@@ -196,7 +196,7 @@ const ChatPage: React.FC = () => {
                 <span>
                   {listening ? '🎤 Listening... Speak now' : 'Press the microphone icon to use voice input'}
                 </span>
-                <span className="italic opacity-70">Powered by Nutribot AI🤖</span>
+                <span className="italic opacity-70">Powered by Zestly AI🤖</span>
               </div>
             </form>
           </motion.div>
@@ -215,7 +215,7 @@ const ChatPage: React.FC = () => {
         tabIndex={0}
       >
         <span className="inline-block w-8 h-8 rounded-full overflow-hidden shadow group-hover:scale-110 transition-transform border-2 border-primary-100 bg-white">
-  <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="NutriBot Avatar" className="w-full h-full object-cover" />
+  <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="Zestly Avatar" className="w-full h-full object-cover" />
 </span>
         <span className="font-medium text-primary-900 group-hover:text-primary-700 transition-colors duration-200">{question}</span>
       </button>

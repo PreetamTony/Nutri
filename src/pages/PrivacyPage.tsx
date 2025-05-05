@@ -1,6 +1,6 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Calendar, Lock, FileText, Mail } from 'lucide-react';
+import { Calendar, FileText, Lock, Mail, Shield } from 'lucide-react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const PrivacyPage: React.FC = () => {
@@ -27,7 +27,7 @@ const PrivacyPage: React.FC = () => {
             <div className="p-6">
               <div className="prose max-w-none text-neutral-700">
                 <p>
-                  At NutriBot, we take your privacy seriously. This Privacy Policy explains how we collect, use, 
+                  At Zestly, we take your privacy seriously. This Privacy Policy explains how we collect, use, 
                   disclose, and safeguard your information when you use our application.
                 </p>
                 
@@ -56,7 +56,7 @@ const PrivacyPage: React.FC = () => {
                     <div className="text-primary-500 mt-1 mr-2">•</div>
                     <div>
                       <strong>Use our features</strong>: We collect information about your food choices, 
-                      meal plans, nutrition logs, and interactions with the NutriBot Assistant.
+                      meal plans, nutrition logs, and interactions with the Zestly Assistant.
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -121,7 +121,7 @@ const PrivacyPage: React.FC = () => {
                 <p>
                   We will retain your information for as long as your account is active or as needed to provide you services. 
                   If you wish to cancel your account or request that we no longer use your information, 
-                  contact us at privacy@nutribot.com.
+                  contact us at privacy@Zestly.com.
                 </p>
                 
                 <h2 className="text-xl font-semibold text-neutral-800 mt-8 mb-4">Security</h2>
@@ -144,7 +144,7 @@ const PrivacyPage: React.FC = () => {
                   If you have any questions about this Privacy Policy, please contact us at:
                 </p>
                 <p className="mt-2">
-                  <strong>Email</strong>: privacy@nutribot.com
+                  <strong>Email</strong>: privacy@Zestly.com
                 </p>
                 <p>
                   <strong>Address</strong>: 123 Nutrition Avenue, Health City, CA 94000, USA

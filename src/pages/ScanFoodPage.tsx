@@ -152,10 +152,10 @@ const ScanFoodPage: React.FC = () => {
               <div className="bg-white/80 backdrop-blur-lg rounded-3xl shadow-2xl border border-primary-100 glass-card p-8">
                 <div className="flex items-center gap-4 mb-6">
                   <span className="inline-flex items-center justify-center bg-white/40 rounded-full p-2 shadow-lg ">
-                    <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="NutriBot Avatar" className="w-14 h-14 rounded-full object-cover border-2 border-primary-200 shadow animate-bounce-slow" />
+                    <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="Zestly Avatar" className="w-14 h-14 rounded-full object-cover border-2 border-primary-200 shadow animate-bounce-slow" />
                   </span>
                   <div>
-                    <h2 className="text-2xl font-extrabold drop-shadow tracking-tight text-primary-700">NutriBot Food Scanner</h2>
+                    <h2 className="text-2xl font-extrabold drop-shadow tracking-tight text-primary-700">Zestly Food Scanner</h2>
                     <p className="text-primary-400 text-sm font-medium">Snap or upload a food label for instant nutrition AI insights</p>
                   </div>
                 </div>
@@ -254,7 +254,7 @@ const ScanFoodPage: React.FC = () => {
                   className="bg-neutral-50 rounded-3xl shadow-2xl border border-neutral-200 glass-card p-8 flex flex-col items-center"
                 >
                   <span className="inline-flex items-center justify-center bg-white/40 rounded-full p-2 shadow-lg animate-fade-in -mt-20 mb-4">
-                    <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="NutriBot Avatar" className="w-20 h-20 rounded-full object-cover border-2 border-primary-200 shadow " />
+                    <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="Zestly Avatar" className="w-20 h-20 rounded-full object-cover border-2 border-primary-200 shadow " />
                   </span>
                   <h2 className="text-2xl font-extrabold drop-shadow tracking-tight text-primary-700 mb-6">Scan Results</h2>
                   {error ? (
@@ -274,10 +274,10 @@ const ScanFoodPage: React.FC = () => {
                       </div>
                       <div className="relative flex flex-col items-center gap-3 my-8 w-full">
                         <span className="inline-block w-12 h-12 rounded-full overflow-hidden shadow border-2 border-blue-200 bg-white absolute -top-12 left-1/2 -translate-x-1/2 animate-fade-in">
-                          <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="NutriBot Avatar" className="w-full h-full object-cover " />
+                          <img src="https://i.postimg.cc/WzfKp2mL/image.png" alt="Zestly Avatar" className="w-full h-full object-cover " />
                         </span>
                         <div className="whitespace-pre-wrap text-primary-900 bg-gradient-to-br from-blue-50 via-white to-blue-100 rounded-xl p-4 text-left min-h-[80px] border border-blue-200 shadow w-full">
-                          <strong className="text-blue-600">NutriBot Insights</strong>
+                          <strong className="text-blue-600">Zestly Insights</strong>
                           <br />
                           {isScanning && !insights ? (
                             <span className="text-blue-600">Analyzing product details...</span>
